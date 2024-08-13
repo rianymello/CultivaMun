@@ -1,9 +1,38 @@
 import type { NextPage } from "next";
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
 
 const BlogArticle2: NextPage = () => {
   const router = useRouter();
+  useEffect(() => {
+    const scrollAnimElements = document.querySelectorAll(
+      "[data-animate-on-scroll]"
+    );
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            const targetElement = entry.target;
+            targetElement.classList.add("animate");
+            observer.unobserve(targetElement);
+          }
+        }
+      },
+      {
+        threshold: 0.15,
+      }
+    );
+
+    for (let i = 0; i < scrollAnimElements.length; i++) {
+      observer.observe(scrollAnimElements[i]);
+    }
+
+    return () => {
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.unobserve(scrollAnimElements[i]);
+      }
+    };
+  }, []);
 
   const onFrameButtonClick = useCallback(() => {
     router.push("/");
@@ -17,7 +46,10 @@ const BlogArticle2: NextPage = () => {
   }, []);
 
   return (
-    <div className="relative [background:linear-gradient(180deg,_#f1f3f7,_rgba(244,_247,_252,_0)),_#fff] w-full h-[2494px] flex flex-col items-center justify-start gap-[45px] text-left text-lg text-studio-darkmode-exportbg-1a202e font-roboto">
+    <div
+      className="h-[2494px] relative [background:linear-gradient(180deg,_#f1f3f7,_rgba(244,_247,_252,_0)),_#fff] w-full flex flex-col items-center justify-start gap-[45px] [&.animate]:animate-[1s_ease_0s_1_normal_forwards_fade-in] opacity-[0] text-left text-lg text-studio-darkmode-exportbg-1a202e font-roboto"
+      data-animate-on-scroll
+    >
       <header className="w-full shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] bg-gray-100 flex flex-row items-center justify-between py-[26px] pl-9 pr-12 box-border sticky top-[0px] z-[2] text-left text-34xl text-studio-darkmode-exportbg-1a202e font-alegreya lg:pt-[18px] lg:pb-[18px] lg:box-border md:py-1.5 md:px-9 md:box-border mq960:py-1.5 mq960:px-3.5 mq960:box-border mq680:pl-9 mq680:pr-9 mq680:box-border">
         <b className="w-[405px] relative tracking-[0.02em] leading-[64px] inline-block h-16 shrink-0 sm:text-[40px!important] sm:leading-[50px!important] mq680:text-29xl mq680:leading-[56px]">
           CultivaMun

@@ -20,7 +20,7 @@ const BlogCategoryPreviews: NextPage<BlogCategoryPreviewsType> = ({
   }, [router]);
 
   const onFrameLinkClick2 = useCallback(() => {
-    router.push("/blog-article1");
+    router.push("/blog-article3");
   }, [router]);
 
   return (

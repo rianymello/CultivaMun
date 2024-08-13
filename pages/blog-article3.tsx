@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
 import { useCallback, useEffect } from "react";
-import TryforFree from "../components/tryfor-free";
 import { useRouter } from "next/router";
 
-const BlogArticle: NextPage = () => {
+const BlogArticle3: NextPage = () => {
   const router = useRouter();
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -55,10 +54,17 @@ const BlogArticle: NextPage = () => {
         <b className="w-[405px] relative tracking-[0.02em] leading-[64px] inline-block h-16 shrink-0 sm:text-[40px!important] sm:leading-[50px!important] mq680:text-29xl mq680:leading-[56px]">
           CultivaMun
         </b>
-        <div className="flex flex-row items-start justify-start">
+        <div className="flex flex-row items-start justify-start text-center text-sm text-white font-source-code-pro">
           <div className="flex flex-row items-start justify-start gap-2.5">
             <a className="[text-decoration:none] h-[46px] w-[47px] rounded-6xl bg-white border-mediumseagreen border-[1px] border-solid box-border hover:bg-dodgerblue hover:[transition:0.3s] md:py-[17px] md:px-[15px] md:box-border sm:flex sm:p-[15px] sm:box-border mq960:p-[11px] mq960:box-border mq960:h-auto mq960:w-auto" />
-            <TryforFree />
+            <a className="[text-decoration:none] h-[46px] w-[49px] rounded-3xl bg-mediumseagreen flex flex-col items-center justify-center py-[11px] px-5 box-border text-[inherit] hover:bg-mediumslateblue-100 hover:cursor-pointer hover:[transition:0.25s] sm:py-[11px] sm:px-3 sm:box-border sm:w-auto mq960:py-[9px] mq960:px-2.5 mq960:box-border mq960:h-auto">
+              <div className="hidden flex-row items-center justify-center gap-[5px] [pointer-events:none]">
+                <div className="relative tracking-[-0.03em] font-semibold mq960:text-3xs">
+                  S
+                </div>
+                <div className="relative tracking-[-0.03em] font-semibold text-transparent !bg-clip-text [background:hsla(0,0%,100%,.11)] rounded py-[3px] px-1 mq960:text-3xs" />
+              </div>
+            </a>
           </div>
         </div>
       </header>
@@ -114,7 +120,7 @@ const BlogArticle: NextPage = () => {
                     </div>
                   </div>
                   <b className="self-stretch relative text-34xl tracking-[0.02em] leading-[64px] font-alegreya sm:text-[40px!important] sm:leading-[50px] mq680:text-29xl mq680:leading-[56px]">
-                    Artigo 1
+                    Artigo 3
                   </b>
                   <div className="self-stretch relative text-xl tracking-[0.01em] leading-[34px] font-roboto">
                     Go from Figma to code in minimum amount of time using
@@ -215,4 +221,4 @@ const BlogArticle: NextPage = () => {
   );
 };
 
-export default BlogArticle;
+export default BlogArticle3;

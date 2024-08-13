@@ -15,6 +15,15 @@ body {
   border-width: 0;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes roll-in-left {
   0% {
     transform: translateX(-50px) rotate(-540deg);
