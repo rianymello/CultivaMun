@@ -21,7 +21,7 @@ export default function MyApp(props: AppProps) {
   return (
     <Fragment>
       <Head>
-        <title>Create a blog app with Locofy.ai & Prismic.io (Community)</title>
+        <title>CultivaMun</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"

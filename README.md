@@ -1,5 +1,5 @@
 
-  # Create a blog app with Locofy.ai & Prismic.io (Community)
+  # CultivaMun
 
   Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
 

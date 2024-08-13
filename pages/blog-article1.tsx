@@ -174,7 +174,7 @@ const BlogArticle1: NextPage = () => {
                     <p className="m-0">&nbsp;</p>
                     <p className="m-0">{`That’s where Locofy.ai comes in. While Figma is enough to get the ball rolling, Locofy.ai even takes it further by enabling anyone with a Figma design to get high-quality, pixel-perfect code. Hence, accelerating the building process – with minimal time and a shallow learning curve, builders can now quickly and easily go from Figma to code. `}</p>
                     <p className="m-0">&nbsp;</p>
-                    <p className="m-0">{`Validating an idea? Revamping your UI? The Locofy plugin puts Figma on steroids by taking your idea from design to websites and app.  Figma has become a household name in the UIUX community. Being a truly browser-first product (not just storage in the cloud - no installation, no patching, no updates) and with highly collaborative features that no other player could think of or execute, Figma emerged as the clear market leader. `}</p>
+                    <p className="m-0">{`Validating an idea? Revamping your UI? The Locofy plugin puts Figma on steroids by taking your idea from design to websites and app.Figma has become a household name in the UIUX community. Being a truly browser-first product (not just storage in the cloud - no installation, no patching, no updates) and with highly collaborative features that no other player could think of or execute, Figma emerged as the clear market leader. `}</p>
                     <p className="m-0">&nbsp;</p>
                     <p className="m-0">
                       You can design anything on Figma – from a cool logo to
@@ -186,7 +186,7 @@ const BlogArticle1: NextPage = () => {
                     <p className="m-0">&nbsp;</p>
                     <p className="m-0">{`That’s where Locofy.ai comes in. While Figma is enough to get the ball rolling, Locofy.ai even takes it further by enabling anyone with a Figma design to get high-quality, pixel-perfect code. Hence, accelerating the building process – with minimal time and a shallow learning curve, builders can now quickly and easily go from Figma to code. `}</p>
                     <p className="m-0">&nbsp;</p>
-                    <p className="m-0">{`Validating an idea? Revamping your UI? The Locofy plugin puts Figma on steroids by taking your idea from design to websites and app.  Figma has become a household name in the UIUX community. Being a truly browser-first product (not just storage in the cloud - no installation, no patching, no updates) and with highly collaborative features that no other player could think of or execute, Figma emerged as the clear market leader. `}</p>
+                    <p className="m-0">{`Validating an idea? Revamping your UI? The Locofy plugin puts Figma on steroids by taking your idea from design to websites and app.Figma has become a household name in the UIUX community. Being a truly browser-first product (not just storage in the cloud - no installation, no patching, no updates) and with highly collaborative features that no other player could think of or execute, Figma emerged as the clear market leader. `}</p>
                     <p className="m-0">&nbsp;</p>
                     <p className="m-0">
                       You can design anything on Figma – from a cool logo to
